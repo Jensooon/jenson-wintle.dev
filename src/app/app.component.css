@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  /* min-height: 100vh; */
+}
+
+app-site-header {
+  flex: 1;
+  background-color: green;
+}
+
+app-home {
+  flex: 2;
+  background-color: aqua;
+}
+
+app-site-footer {
+  flex: 1;
+  background-color: purple;
+}
