@@ -12,7 +12,7 @@ app-site-header {
 }
 
 app-home {
-  flex: 2;
+  flex: 6;
   background-color: aqua;
 }
 
