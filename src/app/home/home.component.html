@@ -1,6 +1,21 @@
 <div
+  class="wrapper"
   [class.dark-class]="isComponentBGDark"
   [class.white-class]="!isComponentBGDark"
 >
-  <p>home works!</p>
+  <h1 class="header">home works!</h1>
+  <div
+    [class.dark-card]="isComponentBGDark"
+    [class.white-card]="!isComponentBGDark"
+  >
+    <div
+      [class.dark-bg]="isComponentBGDark"
+      [class.white-bg]="!isComponentBGDark"
+    ></div>
+    <div
+      [class.dark-blob]="isComponentBGDark"
+      [class.white-blob]="!isComponentBGDark"
+      class="blob"
+    ></div>
+  </div>
 </div>
