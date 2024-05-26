@@ -1,0 +1,10 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bb8 {
+  padding-top: 1.5%;
+  padding-right: 1.5%;
+}

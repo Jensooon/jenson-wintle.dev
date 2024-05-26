@@ -5,3 +5,14 @@ html {
   margin: 0;
   height: 100%;
 }
+
+.dark-class {
+  background: #212121;
+  color: white;
+  height: 100%;
+}
+.white-class {
+  background: #e8e8e8;
+  color: black;
+  height: 100%;
+}
