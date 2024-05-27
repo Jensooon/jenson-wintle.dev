@@ -1,4 +1,8 @@
-<div class="wrapper">
+<div
+  class="wrapper"
+  [class.dark-class]="isComponentBGDark"
+  [class.white-class]="!isComponentBGDark"
+>
   <a href="https://github.com/Jensooon">
     <img class="logo" src="/assets/github.svg" alt="GitHub" />
   </a>

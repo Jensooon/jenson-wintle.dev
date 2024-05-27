@@ -8,15 +8,12 @@
 
 app-site-header {
   flex: 1;
-  background-color: #212121;
 }
 
 app-home {
   flex: 6;
-  background-color: aqua;
 }
 
 app-site-footer {
   flex: 1;
-  background-color: purple;
 }
