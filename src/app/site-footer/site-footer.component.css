@@ -1,24 +1,43 @@
-/* .container {
-  display: flex;
-  justify-content: space-between;
-  font-size: 24px;
-  margin-bottom: 10px;
-  margin: -3px -8px 0 -8px;
-  padding: 0 8px 5px 8px;
-  border-bottom: 2px solid #818285;
-} */
 .wrapper {
   display: flex;
   height: 100%;
   justify-content: center;
 }
 
-.logo {
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 50px;
+  padding: 0.5%;
+}
+
+/* Make the image to responsive */
+.image {
   width: 50px;
   height: 50px;
-  position: relative;
-  margin: 10px;
-  bottom: 0px;
+}
+
+.email-image {
+  width: 50px;
+  height: 50px;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  width: 50px;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 12px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
 }
 
 #loader {
@@ -30,6 +49,7 @@
   margin: -20px -40px; */
   z-index: 1;
   padding-top: 1%;
+  margin-left: 1%;
 }
 
 .lightsaber {
