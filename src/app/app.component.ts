@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { SiteHeaderComponent } from './site-header/site-header.component';
 import { SiteFooterComponent } from './site-footer/site-footer.component';
 import { HomeComponent } from './home/home.component';
@@ -11,7 +11,8 @@ import { HomeComponent } from './home/home.component';
     RouterOutlet,
     SiteHeaderComponent,
     SiteFooterComponent,
-    HomeComponent,
+    RouterLink,
+    RouterLinkActive,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
