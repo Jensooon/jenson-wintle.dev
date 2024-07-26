@@ -2,6 +2,12 @@
   [class.dark-class]="isComponentBGDark"
   [class.white-class]="!isComponentBGDark"
 >
+  <div class="left">
+    <a routerLink="/home" routerLinkActive="active">Home</a>
+    <a routerLink="/education" routerLinkActive="active">Education</a>
+    <a routerLink="/experience" routerLinkActive="active">Experience</a>
+  </div>
+
   <div class="wrapper">
     <app-bb8-toggle class="bb8"></app-bb8-toggle>
   </div>
