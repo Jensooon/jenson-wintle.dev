@@ -3,7 +3,7 @@ import { HomeComponent } from './home/home.component';
 import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
 
-export const routes: Routes = [
+const routeConfig: Routes = [
   { path: 'home', component: HomeComponent, title: 'Home' },
   {
     path: 'education',
@@ -13,3 +13,5 @@ export const routes: Routes = [
   { path: 'experience', component: ExperienceComponent, title: 'Experience' },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
+
+export default routeConfig;

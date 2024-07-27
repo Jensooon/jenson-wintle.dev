@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { Bb8ToggleComponent } from './bb8-toggle/bb8-toggle.component';
 import { Subscription } from 'rxjs';
 import { ThemeServiceService } from '../theme-service.service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-site-header',
   standalone: true,
-  imports: [Bb8ToggleComponent],
+  imports: [Bb8ToggleComponent, RouterModule],
   templateUrl: './site-header.component.html',
   styleUrl: './site-header.component.css',
 })

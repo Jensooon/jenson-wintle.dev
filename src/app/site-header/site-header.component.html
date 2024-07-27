@@ -3,9 +3,27 @@
   [class.white-class]="!isComponentBGDark"
 >
   <div class="left">
-    <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
-    <a routerLink="/education" routerLinkActive="active">Education</a>
-    <a routerLink="/experience" routerLinkActive="active">Experience</a>
+    <a
+      class="button"
+      routerLink="/home"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+      >Home</a
+    >
+    <a
+      class="button"
+      routerLink="/education"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+      >Education</a
+    >
+    <a
+      class="button"
+      routerLink="/experience"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+      >Experience</a
+    >
   </div>
 
   <div class="wrapper">
