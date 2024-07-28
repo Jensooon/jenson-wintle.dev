@@ -2,31 +2,33 @@
   [class.dark-class]="isComponentBGDark"
   [class.white-class]="!isComponentBGDark"
 >
-  <div class="left">
-    <a
-      class="button"
-      routerLink="/home"
-      routerLinkActive="active"
-      ariaCurrentWhenActive="page"
-      >Home</a
-    >
-    <a
-      class="button"
-      routerLink="/education"
-      routerLinkActive="active"
-      ariaCurrentWhenActive="page"
-      >Education</a
-    >
-    <a
-      class="button"
-      routerLink="/experience"
-      routerLinkActive="active"
-      ariaCurrentWhenActive="page"
-      >Experience</a
-    >
-  </div>
-
   <div class="wrapper">
+    <div class="left">
+      <a
+        [class.dark-navHeader]="isComponentBGDark"
+        [class.white-navHeader]="!isComponentBGDark"
+        routerLink="/home"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+        >Home</a
+      >
+      <a
+        [class.dark-navHeader]="isComponentBGDark"
+        [class.white-navHeader]="!isComponentBGDark"
+        routerLink="/education"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+        >Education</a
+      >
+      <a
+        [class.dark-navHeader]="isComponentBGDark"
+        [class.white-navHeader]="!isComponentBGDark"
+        routerLink="/experience"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+        >Experience</a
+      >
+    </div>
     <app-bb8-toggle class="bb8"></app-bb8-toggle>
   </div>
 </div>
