@@ -3,6 +3,8 @@ import { RouterModule } from '@angular/router';
 import { SiteHeaderComponent } from './site-header/site-header.component';
 import { SiteFooterComponent } from './site-footer/site-footer.component';
 import { CommonModule } from '@angular/common';
+import { ThemeServiceService } from './theme-service.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -18,4 +20,23 @@ import { CommonModule } from '@angular/common';
 })
 export class AppComponent {
   title = 'jenson-wintle.dev';
+
+  isComponentBGDark: boolean = false;
+  private themeSubscription?: Subscription;
+
+  constructor(private themeService: ThemeServiceService) {}
+
+  ngOnInit() {
+    this.themeSubscription = this.themeService
+      .getGlobalDark()
+      .subscribe((isDark) => {
+        this.isComponentBGDark = isDark;
+      });
+  }
+
+  ngOnDestroy() {
+    if (this.themeSubscription) {
+      this.themeSubscription.unsubscribe();
+    }
+  }
 }
