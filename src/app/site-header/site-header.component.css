@@ -19,6 +19,12 @@
   padding-right: 1.5%;
 }
 
+.mobile-toggle {
+  display: none;
+  padding-top: 1.5%;
+  padding-right: 1.5%;
+}
+
 .white-navHeader {
   font-size: 40px; /* 14px */
   font-weight: 1000;
@@ -49,6 +55,9 @@
   }
   .bb8 {
     display: none;
+  }
+  .mobile-toggle {
+    display: block;
   }
 }
 
