@@ -17,30 +17,6 @@
   margin-bottom: 3%;
 }
 
-.table-container {
-  overflow-x: auto;
-  margin-top: 5rem;
-  padding-left: 1%;
-}
-
-.tbody {
-  white-space: nowrap;
-  padding: 20%;
-}
-
-.table {
-  min-width: 100%;
-  border-collapse: collapse;
-  text-align: left;
-  font-size: 16px; /* 14px */
-  font-weight: 500;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.table-row {
-  border-bottom: 20px solid transparent; /* Adjust the value as needed */
-}
-
 .white-card {
   align-self: center;
   position: relative;
@@ -69,6 +45,54 @@
   align-items: center;
   justify-content: center;
   box-shadow: 20px 20px 60px #373737, -20px -20px 60px black;
+}
+
+/* Tablet size (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .title {
+    font-size: 40px; /* Adjusted for tablet */
+  }
+  .sub-title {
+    font-size: 20px;
+  }
+}
+
+/* Mobile size (max-width: 767px) */
+@media (max-width: 767px) {
+  .title {
+    font-size: 30px;
+  }
+  .sub-title {
+    font-size: 15px;
+  }
+  .white-card,
+  .dark-card {
+    display: none;
+  }
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-top: 5rem;
+  padding-left: 1%;
+}
+
+.tbody {
+  white-space: nowrap;
+  padding: 20%;
+}
+
+.table {
+  min-width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 16px; /* 14px */
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.table-row {
+  border-bottom: 20px solid transparent; /* Adjust the value as needed */
 }
 
 .white-bg {

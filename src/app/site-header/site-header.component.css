@@ -11,7 +11,7 @@
 }
 
 .left * {
-  margin-right: 25px;
+  margin-right: 5%;
 }
 
 .bb8 {
@@ -31,6 +31,25 @@
   font-weight: 1000;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white;
+}
+
+/* Tablet size (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .white-navHeader,
+  .dark-navHeader {
+    font-size: 30px; /* Adjusted for tablet */
+  }
+}
+
+/* Mobile size (max-width: 767px) */
+@media (max-width: 767px) {
+  .white-navHeader,
+  .dark-navHeader {
+    font-size: 20px; /* Adjusted for mobile */
+  }
+  .bb8 {
+    display: none;
+  }
 }
 
 .dark-navHeader.active {
