@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { ThemeServiceService } from '../theme-service.service';
 import { Subscription } from 'rxjs';
+import { ScrollRevealDirective } from '../scroll-reveal.directive';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [ScrollRevealDirective],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })

@@ -47,6 +47,13 @@
   box-shadow: 20px 20px 60px #373737, -20px -20px 60px black;
 }
 
+.section {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+}
+
 /* Tablet size (768px to 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
   .title {
