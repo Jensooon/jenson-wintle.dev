@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { ThemeServiceService } from '../theme-service.service';
 import { Subscription } from 'rxjs';
 import { ScrollRevealDirective } from '../scroll-reveal.directive';
+import { UserCardComponent } from './user-card/user-card.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ScrollRevealDirective],
+  imports: [ScrollRevealDirective, UserCardComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
