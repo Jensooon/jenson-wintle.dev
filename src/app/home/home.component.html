@@ -3,9 +3,13 @@
   [class.dark-class]="isComponentBGDark"
   [class.white-class]="!isComponentBGDark"
 >
-  <app-user-card></app-user-card>
-  <a class="title">Jenson Wintle</a>
-  <a class="sub-title">Software Engineer</a>
+  <div class="profile-content">
+    <app-user-card></app-user-card>
+    <div>
+      <a class="title">Jenson Wintle</a>
+      <a class="sub-title">Software Engineer</a>
+    </div>
+  </div>
   <div
     [class.dark-card]="isComponentBGDark"
     [class.white-card]="!isComponentBGDark"
