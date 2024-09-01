@@ -25,6 +25,10 @@
   margin-bottom: 3%;
 }
 
+.user-card {
+  padding: 10%;
+}
+
 .white-card {
   align-self: center;
   position: relative;
@@ -62,6 +66,10 @@
   min-height: 100vh;
 }
 
+.mobile-toggle {
+  display: none;
+}
+
 /* Tablet size (768px to 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
   .title {
@@ -69,6 +77,12 @@
   }
   .sub-title {
     font-size: 20px;
+  }
+  .card-toggle {
+    display: none;
+  }
+  .mobile-toggle {
+    display: block;
   }
 }
 
@@ -83,6 +97,12 @@
   .white-card,
   .dark-card {
     display: none;
+  }
+  .card-toggle {
+    display: none;
+  }
+  .mobile-toggle {
+    display: block;
   }
 }
 

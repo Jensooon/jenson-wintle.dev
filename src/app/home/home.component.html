@@ -4,42 +4,44 @@
   [class.white-class]="!isComponentBGDark"
 >
   <div class="profile-content">
-    <app-user-card></app-user-card>
+    <app-user-card class="user-card"></app-user-card>
     <div>
       <a class="title">Jenson Wintle</a>
       <a class="sub-title">Software Engineer</a>
     </div>
   </div>
-  <div
-    [class.dark-card]="isComponentBGDark"
-    [class.white-card]="!isComponentBGDark"
-  >
+  <div class="card-toggle">
     <div
-      [class.dark-bg]="isComponentBGDark"
-      [class.white-bg]="!isComponentBGDark"
+      [class.dark-card]="isComponentBGDark"
+      [class.white-card]="!isComponentBGDark"
     >
-      <div class="table-container">
-        <table class="table">
-          <tbody class="tbody">
-            <tr class="table-row">
-              <td>WPF Calendar App</td>
-              <td>An app to track dates and events.</td>
-            </tr>
-            <tr>
-              <td>AI Playground</td>
-              <td>Explore Azure AI capabilities in a website</td>
-            </tr>
-          </tbody>
-        </table>
+      <div
+        [class.dark-bg]="isComponentBGDark"
+        [class.white-bg]="!isComponentBGDark"
+      >
+        <div class="table-container">
+          <table class="table">
+            <tbody class="tbody">
+              <tr class="table-row">
+                <td>WPF Calendar App</td>
+                <td>An app to track dates and events.</td>
+              </tr>
+              <tr>
+                <td>AI Playground</td>
+                <td>Explore Azure AI capabilities in a website</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
+      <div
+        [class.dark-blob]="isComponentBGDark"
+        [class.white-blob]="!isComponentBGDark"
+        class="blob"
+      ></div>
     </div>
-    <div
-      [class.dark-blob]="isComponentBGDark"
-      [class.white-blob]="!isComponentBGDark"
-      class="blob"
-    ></div>
   </div>
-  <section appScrollReveal>
+  <section class="mobile-toggle" appScrollReveal>
     <h1>Skills</h1>
     <p>Angular</p>
     <p>Azure AI-900 Certificate</p>
