@@ -11,8 +11,6 @@
       <a class="sub-title">Software Engineer</a>
     </div>
   </div>
-
-  <a class="title">Projects</a>
   <div class="card-toggle">
     <div
       [class.dark-card]="isComponentBGDark"
@@ -26,12 +24,23 @@
           <table class="table">
             <tbody class="tbody">
               <tr class="table-row">
-                <td>WPF Calendar App</td>
+                <td>
+                  <a href="http://example.com/wpf-calendar-app"
+                    >WPF Calendar App</a
+                  >
+                </td>
                 <td>An app to track dates and events.</td>
               </tr>
-              <tr>
-                <td>AI Playground</td>
-                <td>Explore Azure AI capabilities in a website</td>
+              <tr class="table-row">
+                <td>
+                  <a href="http://example.com/ai-playground"
+                    >Azure AI Capability Website</a
+                  >
+                </td>
+                <td>
+                  Explore Azure AI capabilities in a website. Describe images,
+                  translate text, detect characters in images and much more!
+                </td>
               </tr>
             </tbody>
           </table>
@@ -44,10 +53,37 @@
       ></div>
     </div>
   </div>
+
   <section class="mobile-toggle" appScrollReveal>
-    <h1>Skills</h1>
-    <p>Angular</p>
-    <p>Azure AI-900 Certificate</p>
+    <h1 class="sub-title">What are my interests?</h1>
+    <p>🖥️ Software Engineering</p>
+    <p>🤖 AI & Machine Learning</p>
+    <p>📐 Mathematics & Problem Solving</p>
+    <p>🎸 Practicing & Playing Guitar</p>
+  </section>
+
+  <section class="mobile-toggle" appScrollReveal>
+    <h1 class="sub-title">Projects</h1>
+    <p>
+      - Explore Azure AI capabilities in a website. Describe images, translate
+      text, detect characters in images and much more!
+    </p>
+    <p>
+      - Track dates, plan events in this WPF Calendar Application. Built with
+      MVVM and Prism.
+    </p>
+    <p>- Improve prodcutivity using these useful autohotkey scripts.</p>
+  </section>
+  <section class="mobile-toggle" appScrollReveal>
+    <h1 class="sub-title">Skills</h1>
+    <p>
+      - Explore Azure AI capabilities in a website. Describe images, translate
+      text, detect characters in images and much more!
+    </p>
+    <p>
+      - Track dates, plan events in this WPF Calendar Application. Built with
+      MVVM and Prism.
+    </p>
     <p>Full stack development in Delphi</p>
   </section>
 </div>
