@@ -60,3 +60,17 @@
 img:hover {
   --f: 1.1; /* hover scale */
 }
+
+/* Mobile size (max-width: 767px) */
+@media (max-width: 767px) {
+  .img-light {
+    --s: 100px; /* image size */
+    --b: 3px; /* border thickness */
+    --f: 0.8; /* initial scale */
+  }
+  .img-dark {
+    --s: 100px; /* image size */
+    --b: 3px; /* border thickness */
+    --f: 0.8; /* initial scale */
+  }
+}

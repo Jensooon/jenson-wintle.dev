@@ -24,6 +24,7 @@
 .title {
   font-size: 50px; /* 14px */
   font-weight: 1000;
+  text-decoration-line: underline;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -77,6 +78,10 @@
 
 .mobile-toggle {
   display: none;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 12px;
 }
 
 /* Tablet size (768px to 1024px) */
