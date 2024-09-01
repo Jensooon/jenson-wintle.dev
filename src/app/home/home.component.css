@@ -5,13 +5,22 @@
 }
 
 .profile-content {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
   align-items: center;
   justify-content: center;
-  margin-top: 5%;
+  grid-template-areas:
+    "user-card headings"
+    "user-card headings";
 }
 
+.headings {
+  grid-area: headings;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .title {
   font-size: 50px; /* 14px */
   font-weight: 1000;
@@ -26,7 +35,7 @@
 }
 
 .user-card {
-  padding: 10%;
+  grid-area: user-card;
 }
 
 .white-card {
