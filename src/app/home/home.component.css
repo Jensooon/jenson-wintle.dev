@@ -24,23 +24,3 @@
 .user-card {
   grid-area: user-card;
 }
-
-/* Tablet size (768px to 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .title {
-    font-size: 40px; /* Adjusted for tablet */
-  }
-  .sub-title {
-    font-size: 20px;
-  }
-}
-
-/* Mobile size (max-width: 767px) */
-@media (max-width: 767px) {
-  .title {
-    font-size: 30px;
-  }
-  .sub-title {
-    font-size: 15px;
-  }
-}
