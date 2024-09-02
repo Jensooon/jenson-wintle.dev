@@ -3,7 +3,15 @@ import { ThemeServiceService } from '../theme-service.service';
 import { Subscription } from 'rxjs';
 import { ScrollRevealDirective } from '../scroll-reveal.directive';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faSearch, faDatabase } from '@fortawesome/free-solid-svg-icons';
+import {
+  faSearch,
+  faDatabase,
+  faSyringe,
+  faMap,
+  faPencil,
+  faVideo,
+  faWrench,
+} from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-experience',
   standalone: true,
@@ -12,8 +20,15 @@ import { faSearch, faDatabase } from '@fortawesome/free-solid-svg-icons';
   styleUrl: './experience.component.css',
 })
 export class ExperienceComponent {
+  // Font Awesome Icons
   faSearch = faSearch;
   faDatabase = faDatabase;
+  faSyringe = faSyringe;
+  faMap = faMap;
+  faPencil = faPencil;
+  faVideo = faVideo;
+  faWrench = faWrench;
+
   isComponentBGDark: boolean = false;
   private themeSubscription?: Subscription;
 
