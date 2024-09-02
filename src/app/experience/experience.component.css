@@ -3,3 +3,23 @@
   flex-direction: column;
   align-items: center;
 }
+
+.underline {
+  text-decoration: underline;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-list li {
+  display: flex;
+  align-items: center;
+}
+
+.skills-list i {
+  font-size: 24px;
+  margin-right: 10px;
+  width: 30px; /* Fixed width for alignment */
+}
