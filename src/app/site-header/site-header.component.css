@@ -51,7 +51,7 @@
 @media (max-width: 767px) {
   .white-navHeader,
   .dark-navHeader {
-    font-size: 15px; /* Adjusted for mobile */
+    font-size: 15px; /* Adjusted for mobile (test)*/
   }
   .bb8 {
     display: none;
