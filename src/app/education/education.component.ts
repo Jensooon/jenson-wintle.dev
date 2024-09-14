@@ -2,11 +2,12 @@ import { Component, ElementRef } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { ThemeServiceService } from '../theme-service.service';
 import { ScrollRevealDirective } from '../scroll-reveal.directive';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-education',
   standalone: true,
-  imports: [ScrollRevealDirective],
+  imports: [ScrollRevealDirective, RouterModule],
   templateUrl: './education.component.html',
   styleUrl: './education.component.css',
 })
