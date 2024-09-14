@@ -1,12 +1,12 @@
 <div
-  class="wrapper"
+  class="wrap"
   [class.dark-class]="isComponentBGDark"
   [class.white-class]="!isComponentBGDark"
 >
   <section>
     <h1 class="sub-title">🛁University of Bath</h1>
-    <h5>
-      🖥️Computer Science and 📐 Mathematics BSc (Hons) with Industrial
+    <h5 class="center-text">
+      🖥️ Computer Science and <br />📐 Mathematics BSc (Hons) with Industrial
       Experience
     </h5>
     <h3>Year 4</h3>
@@ -15,30 +15,55 @@
     <a routerLink="/experience" routerLinkActive="active"
       >Checkout my placement here</a
     >
-    <!-- Add link to experience page -->
     <h3>Year 2</h3>
-    <div class="three-by-one" appScrollReveal>
+    <h4>Semester 1</h4>
+    <div class="four-by-four" appScrollReveal>
       <div class="wrapper">
-        <p>Module 1</p>
+        <a href="https://www.bath.ac.uk/catalogues/2023-2024/cm/CM20254.html">
+          Data structures and algorithms
+        </a>
       </div>
       <div class="wrapper">
-        <p>Module 2</p>
+        <a href="https://www.bath.ac.uk/catalogues/2023-2024/cm/CM20217.html"
+          >Foundations of computation</a
+        >
       </div>
       <div class="wrapper">
-        <p>Module 3</p>
+        <a href="https://www.bath.ac.uk/catalogues/2022-2023/ma/MA20216.html"
+          >Algebra 2A</a
+        >
+      </div>
+      <div class="wrapper">
+        <a href="https://www.bath.ac.uk/catalogues/2022-2023/ma/MA20218.html"
+          >Analysis 2A</a
+        >
       </div>
     </div>
-    <div class="three-by-one" appScrollReveal>
+
+    <h4>Semester 2</h4>
+    <div class="four-by-four" appScrollReveal>
       <div class="wrapper">
-        <p>Module 1</p>
+        <a href="https://www.bath.ac.uk/catalogues/2023-2024/cm/CM20318.html"
+          >Comparative programming</a
+        >
       </div>
       <div class="wrapper">
-        <p>Module 2</p>
+        <a href="https://www.bath.ac.uk/catalogues/2022-2023/cm/CM20256.html">
+          Functional programming
+        </a>
       </div>
       <div class="wrapper">
-        <p>Module 3</p>
+        <a href="https://www.bath.ac.uk/catalogues/2022-2023/ma/MA20217.html"
+          >Algebra 2B</a
+        >
+      </div>
+      <div class="wrapper">
+        <a href="https://www.bath.ac.uk/catalogues/2022-2023/ma/MA20219.html"
+          >Analysis 2B</a
+        >
       </div>
     </div>
+
     <h3>Year 1</h3>
   </section>
 </div>

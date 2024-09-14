@@ -49,6 +49,11 @@ h4 {
   font-family: "Caveat", Tahoma, Geneva, Verdana, sans-serif;
   text-decoration: underline;
 }
+h5 {
+  font-size: 25px;
+  font-weight: 1000;
+  font-family: "Caveat", Tahoma, Geneva, Verdana, sans-serif;
+}
 
 section {
   display: grid;
@@ -70,6 +75,7 @@ p {
   grid-template-rows: auto auto;
   align-items: center;
   justify-content: center;
+  text-align: center;
   gap: 5%;
 }
 
@@ -105,6 +111,9 @@ p {
   h4 {
     font-size: 20px;
   }
+  h5 {
+    font-size: 20px;
+  }
 }
 
 /* Mobile size (max-width: 767px) */
@@ -128,6 +137,9 @@ p {
     font-size: 20px;
   }
   h4 {
+    font-size: 15px;
+  }
+  h5 {
     font-size: 15px;
   }
 }
