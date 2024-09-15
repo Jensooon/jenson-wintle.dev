@@ -28,28 +28,26 @@ a {
   text-align: center;
 }
 
-/* Tablet size (768px to 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-  a {
-    font-size: 13px;
-  }
-}
-
-/* Mobile size (max-width: 767px) */
-@media (max-width: 767px) {
-  a {
-    font-size: 12px;
-  }
-}
-
 a:hover {
   color: #5cadd2;
 }
 
-.loader {
+.dark-loader {
   width: 28px;
   height: 28px;
-  border: 4px solid #fff;
+  border: 4px solid red;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  margin-right: 2%;
+}
+
+.light-loader {
+  width: 28px;
+  height: 28px;
+  border: 4px solid green;
   border-bottom-color: transparent;
   border-radius: 50%;
   display: inline-block;
@@ -64,5 +62,63 @@ a:hover {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+/* Tablet size (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  a {
+    font-size: 13px;
+  }
+  .light-loader {
+    width: 23px;
+    height: 23px;
+    border: 3px solid green;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    margin-right: 2%;
+  }
+  .dark-loader {
+    width: 23px;
+    height: 23px;
+    border: 3px solid red;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    margin-right: 2%;
+  }
+}
+
+/* Mobile size (max-width: 767px) */
+@media (max-width: 767px) {
+  a {
+    font-size: 12px;
+  }
+  .light-loader {
+    width: 18px;
+    height: 18px;
+    border: 2px solid green;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    margin-right: 2%;
+  }
+  .dark-loader {
+    width: 18px;
+    height: 18px;
+    border: 2px solid red;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    margin-right: 2%;
   }
 }

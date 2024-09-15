@@ -11,7 +11,10 @@
     </h5>
     <h3>Year 4</h3>
     <div class="container">
-      <span class="loader"></span>
+      <span
+        [class.dark-loader]="isComponentBGDark"
+        [class.light-loader]="!isComponentBGDark"
+      ></span>
       <p>in progress</p>
     </div>
     <h3>Year 3</h3>
