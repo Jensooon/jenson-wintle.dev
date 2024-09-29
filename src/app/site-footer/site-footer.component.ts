@@ -12,8 +12,8 @@ import { ThemeServiceService } from '../theme-service.service';
 export class SiteFooterComponent {
   isComponentBGDark: boolean = false;
   private themeSubscription?: Subscription;
-  emailUrl: string = '/assets/mailDark.svg';
-  githubUrl: string = '/assets/githubDark.svg';
+  emailUrl: string = 'assets/mailDark.svg';
+  githubUrl: string = 'assets/githubDark.svg';
 
   constructor(private themeService: ThemeServiceService) {}
 
@@ -35,16 +35,16 @@ export class SiteFooterComponent {
 
   changeEmailUrl() {
     if (this.isComponentBGDark) {
-      this.emailUrl = '/assets/mailLight.svg';
+      this.emailUrl = 'assets/mailLight.svg';
     } else {
-      this.emailUrl = '/assets/mailDark.svg';
+      this.emailUrl = 'assets/mailDark.svg';
     }
   }
   changeGithubUrl() {
     if (this.isComponentBGDark) {
-      this.githubUrl = '/assets/githubDark.svg';
+      this.githubUrl = 'assets/githubDark.svg';
     } else {
-      this.githubUrl = '/assets/githubLight.svg';
+      this.githubUrl = 'assets/githubLight.svg';
     }
   }
 }
